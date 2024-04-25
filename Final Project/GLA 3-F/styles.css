@@ -1,0 +1,41 @@
+
+  *, ::before, ::after {
+  margin: 2px;
+  padding: 2px;
+  box-sizing: border-box;
+  }
+
+  .container {
+    color: rgb(43, 14, 208);
+    justify-items: center;
+  }
+
+  button {
+    background-color: rgb(197, 188, 221);
+    padding: 12px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    color:blue;
+  }
+  
+  .board {
+    display:grid;
+    grid-template-columns:repeat(3, 100px);
+    grid-template-rows:repeat(6, 100px);
+   
+  }
+  
+  .cell {
+    border: 2px solid rgb(16, 157, 157);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    
+  }
+  

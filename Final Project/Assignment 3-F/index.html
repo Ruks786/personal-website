@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashier Calculator Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Cashier Calculator</h1>
+    <div class="container">
+
+        <div class="admin">
+          <h1>Admin</h1>
+          <br>
+          <label for="new-product">Add a new product:</label><br>
+          <input type="text" id="new-product" placeholder="Product name">
+          <button onclick="addNewProduct()">Add Product</button>
+          <br><br>
+          <label for="select-product">Select a Product then add the price per unit:</label>
+          <select id="select-product">
+          </select>
+          <br><br>
+          <label for="price">Add Price Per Unit:</label>
+          <input type="text" id="price" placeholder="Price">
+          <button onclick="AddPrice()">Add Price</button>
+          <br><br>
+        </div>
+        <br>
+
+
+        <div class="checkout">
+          <h1>Checkout</h1>
+          <br>
+          <button onclick="startNewTransaction()">New Transaction</button>
+          <br><br>
+          <label for="products">Select a Product and then type the number of units:</label><br>
+          <select id="products">
+          <!-- Options will be populated dynamically -->
+          </select>
+          <input type="number" id="unit" readonly>
+          <br><br>
+
+          <div class="unitButton">
+              <button onclick="setUnit(1)">1</button>
+              <button onclick="setUnit(2)">2</button>
+              <button onclick="setUnit(3)">3</button><br>
+              <button onclick="setUnit(4)">4</button>
+              <button onclick="setUnit(5)">5</button>
+              <button onclick="setUnit(6)">6</button><br>
+              <button onclick="setUnit(7)">7</button>
+              <button onclick="setUnit(8)">8</button>
+              <button onclick="setUnit(9)">9</button>
+              <br><br>
+          </div>
+
+          <br>
+          <button onclick="addToCart()">Add to Cart</button>
+          <br><br>
+          <button onclick="pay()">Pay</button>
+          
+          <button onclick="print()">Print</button>
+          <br><br>
+        </div>
+        <br>
+
+        <div class="receipt">
+          <h1>Receipt</h1>
+          <br>
+          <div id="receipt">
+          </div>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

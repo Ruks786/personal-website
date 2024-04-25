@@ -1,0 +1,50 @@
+*{
+    margin:1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.admin {
+    float: left;
+    width: 30.33%;
+    padding: 10px;
+    height: 500px;
+    margin-top: 3.75%;
+    background-color:#aaa;
+}
+  .checkout {
+    float: left;
+    width: 30.33%;
+    padding: 10px;
+    height: 500px;
+    margin-top: 2.5%;
+    background-color:#bbb;
+  }
+  .receipt {
+    float: left;
+    width: 30.33%;
+    padding: 10px;
+    height: 500px;
+    margin-top: 1.25%;
+    background-color:#ccc;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  h1{
+    background-color: black;
+    color:blanchedalmond;
+    text-align: center;
+  }
+  .unitButton{
+    padding: 5%;
+    margin: 5%;
+  }
+  button{
+    padding: 5px;
+    background-color: black;
+    color:blanchedalmond;
+  }
+  
+  
